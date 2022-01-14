@@ -118,6 +118,9 @@ class bmp:
         self.formjson["main"]["fields"]["nj"] = userinfo["list"][0]["NJ"]
         self.formjson["main"]["fields"]["tjsj"] =datat
         self.formjson["main"]["fields"]["jssj"] = self.formjson["main"]["fields"]["tjsj"]
+        self.formjson["main"]["fields"]["xydm"] = userinfo["list"][0]["XYDM"]
+        self.formjson["main"]["fields"]["zydm"] = userinfo["list"][0]["ZYDM"]
+        self.formjson["main"]["fields"]["bjdm"] = userinfo["list"][0]["BJDM"]
 
         for key in self.formjson["main"]["fields"]:
             self.Form["m:xsjkdk:{}".format(key)] = self.formjson["main"]["fields"][key]
